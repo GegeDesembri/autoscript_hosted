@@ -16,13 +16,6 @@ cd "$(
 #	Official document: www.v2ray.com
 #====================================================
 
-#Domain
-until [[ -e /home/vmessd ]]; do
-	wgetcommand /usr/bin/vmessd "$sfile/addons/vmessd.sh";
-	chmod +x /usr/bin/vmessd;
-	rm -rf /home/domain
-	vmessd
-done
 source /home/vmessd
 
 #fonts color
